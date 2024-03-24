@@ -3,7 +3,7 @@ import { useAppDispatch, useStore } from "../../../../hooks";
 import { clearAdditionalInfo, fetchPeople } from "../../../../redux/store";
 import { FlatList, StyleSheet, View } from "react-native";
 import { HeroCard } from "../HeroCard";
-import { LoadingScreen } from "../../../../components/index";
+import { LoadingScreen } from "../../../../components";
 
 export const HeroesList: FC = () => {
   const dispatch = useAppDispatch();
@@ -30,6 +30,6 @@ export const HeroesList: FC = () => {
 
 const styles = StyleSheet.create({
   list: {
-    marginBottom: 130,
+    marginBottom: 190,
   },
 });

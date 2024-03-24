@@ -12,7 +12,6 @@ const favoriteHeroesSlice = createSlice({
   initialState,
   reducers: {
     addFavoriteHero(state, { payload }: PayloadAction<{ type: Gender, name: string }>) {
-      console.log(payload);
       switch (payload.type) {
         case "male":
           if (state.male.includes(payload.name)) {
